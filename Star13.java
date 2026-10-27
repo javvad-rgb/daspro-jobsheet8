@@ -6,8 +6,8 @@ public class Star13 {
         System.out.print("Masukkan nilai n = ");
         int n = jvd.nextInt();
 
-        for (int i = 0; i <= n; i++) {
-                System.out.print("*");
+        for (int i = 1; i <= n; i ++) {
+                System.out.print(i + "");
         }
         System.out.println();
         jvd.close();
