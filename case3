@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class case3 {
+    public static void main(String[] args) {
+        Scanner jvd = new Scanner(System.in);
+
+        int totalsemua = 0;
+
+        for (int p = 1; p <= 4; p++) {
+            System.out.println("hari " + p);
+            int totalproduk = 0;
+            for (int h = 1; h <= 3; h++) {
+                System.out.print(" produk " + h + ": ");
+                int jumlah = jvd.nextInt();
+                totalproduk += jumlah;
+            }
+            System.out.println("Total Hari " + p + ": " + totalproduk);
+            totalsemua += totalproduk;
+        }
+        System.out.println("Total Semua Produk: " + totalsemua);
+    }
+}
